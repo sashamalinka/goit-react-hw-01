@@ -5,11 +5,7 @@ const FriendList = ({ friends }) => {
   const friendItem = friends.map((friend) => {
     return (
       <li key={friend.id} className={css.friendItem}>
-        <FriendListItem
-          avatar={friend.avatar}
-          name={friend.name}
-          isOnline={friend.isOnline}
-        />
+        <FriendListItem avatar={friend.avatar} isOnline={friend.isOnline} />
       </li>
     );
   });
